@@ -1,6 +1,6 @@
 ## Linux System Monitor
 
-This project is a system monitor for linux environments similar to Htop.
+This project is a system monitor for linux environments, similar to htop.
 
 ![System Monitor](images/monitor.png)
 
