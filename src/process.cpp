@@ -16,7 +16,7 @@ using std::vector;
 // Return this process's ID
 int Process::Pid() { return pid_; }
 
-// Return this process's CPU utilization
+// Return this process's CPU utilization including child processes
 float Process::CpuUtilization() {
   long jiffies = LinuxParser::ActiveJiffies(
       pid_);  // Total active time for process in clock ticks

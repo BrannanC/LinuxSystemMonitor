@@ -119,6 +119,7 @@ long LinuxParser::Jiffies() {
 }
 
 // Read and return the number of active jiffies for a PID
+// (includes child processes)
 long LinuxParser::ActiveJiffies(int pid) {
   std::ifstream stream(kProcDirectory + to_string(pid) + kStatFilename);
   string line, value;
